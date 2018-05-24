@@ -50,7 +50,7 @@ tst_list = (
   "$D/tests/tst_cubicle_neighbors.py",
   "$D/tests/tst_r3_utils.py",
   "$D/tests/tst_regular_grid_on_unit_sphere.py",
-  "$D/matrix/__init__.py",
+  "$D/matrix/tst_matrix.py",
   "$D/python_utils/tst_random_transform.py",
   "$D/python_utils/tst_graph.py",
   "$D/python_utils/tst_robust.py",
