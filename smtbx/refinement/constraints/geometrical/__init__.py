@@ -1,5 +1,6 @@
 """ Constraints on scatterer sites """
 from __future__ import division
+from __future__ import absolute_import, print_function
 
 class any(object):
   """ Base class for any constraints of scatterer sites """
@@ -39,7 +40,7 @@ class any(object):
     """ For debugging purposes mostly as it is not needed by the
         constraint framework.
     """
-    if type(self) != type(other): return False
+    if not isinstance(self, type(other)): return False
     for attr, val in self.__dict__.iteritems():
       if getattr(other, attr) != val: return False
     return True
